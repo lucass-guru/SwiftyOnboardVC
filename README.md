@@ -3,6 +3,7 @@
 ![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftyOnboardVC.svg?style=flat)](http://cocoadocs.org/docsets/SwiftyOnboardVC)
 [![License](https://img.shields.io/cocoapods/l/SwiftyOnboardVC.svg)](https://raw.githubusercontent.com/chaser79/SwiftyOnboardVC/master/LICENSE)
+
 Onboard controler written in swift 3 that uses view controlers.
 
 ## Overview
@@ -37,7 +38,7 @@ Drag the folder `SwityOnboardVCSource` directory into your project.
 ## Example project
 Download and run the example project to see how SwiftyOnboardVC works.
 
-##Code example
+## Code example
 Create an array of view controllers
 ```swift
 if let storyboard = self.storyboard {
@@ -64,7 +65,7 @@ Present SwiftyOnboardVC
 self.present(onboard, animated: true, completion: nil)
 ```
 
-##Settings for SwiftyOnboardVC
+## Settings for SwiftyOnboardVC
 Once an instance has been created of SwiftyOnboardVC you can changed all of theses features
 ```swift
 //view settings
