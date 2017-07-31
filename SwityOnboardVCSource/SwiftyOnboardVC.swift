@@ -34,6 +34,9 @@ import UIKit
     
     //MARK: Public variables
     
+    //Delegate
+    open weak var delegate: SwiftyOnboardVCDelegate?
+    
     //View controllers array
     public var viewControllers: [UIViewController]  = [] {
         didSet {
@@ -80,7 +83,6 @@ import UIKit
     private var leftButtonTopConstriant: NSLayoutConstraint?
     private var rightButtonTopConstriant: NSLayoutConstraint?
     private var pageControlBottomConstriant: NSLayoutConstraint?
-    weak var delegate: SwiftyOnboardVCDelegate?
     private let pageControl: UIPageControl = {
         let p = UIPageControl()
         p.translatesAutoresizingMaskIntoConstraints = false
@@ -317,6 +319,13 @@ import UIKit
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         pageControl.currentPage -= 1
         delegate?.pageDidChange?(currentPage: pageControl.currentPage + 1)
+    }
+    
+    public func skip() {
+        let indexPath = IndexPath(item: viewControllers.count - 1, section: 0)
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        pageControl.currentPage = viewControllers.count
+        delegate?.pageDidChange?(currentPage: viewControllers.count)
     }
     
     public func moveLeftButtonOffScreen() {

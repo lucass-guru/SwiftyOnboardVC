@@ -5,7 +5,7 @@
 //  Created by luke on 27/07/2017.
 //  Copyright © 2017 Luke Chase. All rights reserved.
 //
-// Demo of a walkthough with a navigation bar and default settings
+// Demo of a walkthough with a navigation bar and skip button
 
 import UIKit
 
@@ -22,6 +22,8 @@ class DemoTwoViewController: UIViewController, SwiftyOnboardVCDelegate {
             let viewFour = storyboard.instantiateViewController(withIdentifier: "ViewFour")
             walkthough.viewControllers = [viewOne, viewTwo, viewThree, viewFour]
             walkthough.delegate = self
+            
+            walkthough.rightButtonText = "Skip"
             
             if showNavBar {
                 //Embed in a navigation controller
@@ -47,7 +49,7 @@ class DemoTwoViewController: UIViewController, SwiftyOnboardVCDelegate {
     }
     
     func rightButtonPressed() {
-        walkthough.nextPage()
+        walkthough.skip()
     }
     
     //MARK: Moving the buttons and page control on/off the screen
