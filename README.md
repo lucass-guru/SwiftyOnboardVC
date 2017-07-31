@@ -3,10 +3,10 @@
 ![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)
 Onboard controler written in swift 3 that uses view controlers.
 
-# Overview
+## Overview
 <img src="Demo.gif" width="220"/>
 
-# Installation
+## Installation
 
 ### CocoaPods
 SwiftyOnboardVC is available through [CocoaPods](http://cocoapods.org). To install
@@ -26,6 +26,20 @@ $ gem install cocoapods
 
 Drag the folder `SwityOnboardVCSource` directory into your project.
 
-# License
+## Requirements
+
+* iOS 9.0+
+* Xcode 8+
+* Swift 3
+
+## Example project
+Download and run the example project to see how SwiftyOnboardVC works.
+
+##Code example
+
+
+##Settings for SwiftyOnboardVC
+
+## License
 
 SwiftyOnboardVC is available under the MIT license. See the [LICENSE](https://github.com/chaser79/SwiftyOnboardVC/blob/master/LICENSE) file for more info.
