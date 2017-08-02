@@ -1,5 +1,4 @@
 # SwiftyOnboardVC
-[![CI Status](http://img.shields.io/travis/chaser79/SwiftyOnboardVC.svg?style=flat)](https://travis-ci.org/chaser79/SwiftyOnboardVC)
 [![Version](https://img.shields.io/cocoapods/v/SwiftyOnboardVC.svg?style=flat)](http://cocoapods.org/pods/SwiftyOnboardVC)
 [![Platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](http://cocoapods.org/pods/SwiftyOnboardVC)
 [![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)](https://developer.apple.com/swift/resources/)
@@ -155,6 +154,7 @@ func pageDidChange(currentPage: Int) {
 
 ## Donations
 If you would like to donate to make SwiftOnboardVC better or just buy me a beer.
+
 [![paypal](https://www.paypalobjects.com/en_GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N8JBV5QTY2BJL)
 
 ## Communication
