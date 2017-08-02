@@ -1,16 +1,12 @@
 # SwiftyOnboardVC
-<p align="center">
-<img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat"alt="Platform iOS"/>
-<a href="https://developer.apple.com/swift/resources/"><img src="https://img.shields.io/badge/Swift-3.0.x-orange.svg" alt="Swift 3 compatible"></a>
-<a href="http://cocoapods.org/pods/SwiftyOnboardVC"><img src="https://img.shields.io/cocoapods/v/SwiftyOnboardVC.svg?style=flat" alt="CocoaPods compatible" /></a>
-<a href="https://raw.githubusercontent.com/chaser79/SwiftyOnboardVC/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/SwiftyOnboardVC.svg" alt="License: MIT" /></a>
-</p>
+[![CI Status](http://img.shields.io/travis/chaser79/SwiftyOnboardVC.svg?style=flat)](https://travis-ci.org/chaser79/SwiftyOnboardVC){:target="_blank"}
+[![Version](https://img.shields.io/cocoapods/v/SwiftyOnboardVC.svg?style=flat)](http://cocoapods.org/pods/SwiftyOnboardVC){:target="_blank"}
+[![Platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](http://cocoapods.org/pods/SwiftyOnboardVC){:target="_blank"}
+[![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)](https://developer.apple.com/swift/resources/){:target="_blank"}
+[![License](https://img.shields.io/cocoapods/l/SwiftyOnboardVC.svg)](https://raw.githubusercontent.com/chaser79/SwiftyOnboardVC/master/LICENSE){:target="_blank"}
 
-<p>
 Onboard controler written in swift 3 that uses view controlers.
-<br>
-By <a href="http://www.frontflipstudios.com">FrontFlip Studios.</a>
-</p>
+By [FrontFlip Studios](http://www.frontflipstudios.com){:target="_blank"}
 
 ## Overview
 <img src="Demo.gif" width="220"/>
@@ -18,8 +14,7 @@ By <a href="http://www.frontflipstudios.com">FrontFlip Studios.</a>
 ## Installation
 
 ### CocoaPods
-SwiftyOnboardVC is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+SwiftyOnboardVC is available through [CocoaPods](http://cocoapods.org){:target="_blank"}. To install it, simply add the following line to your Podfile:
 
 `pod 'SwiftyOnboardVC'`
 
@@ -151,10 +146,10 @@ func pageDidChange(currentPage: Int) {
 ```
 
 ## Author
-- <a href="https://github.com/chaser79" target="_blank">Luke Chase</a>
-- <a href="http://www.frontflipstudios.com" target="_blank">FrontFlip Studios</a>
-- <a href="https://www.facebook.com/FrontFlipStudios/" target="_blank"><img src="http://i.imgur.com/fep1WsG.png" alt="facebook"></a>
-- <a href="https://twitter.com/FrontFlipDevs" target="_blank"><img src="http://i.imgur.com/wWzX9uB.png" alt="twitter"></a>
+- [Luke Chase](https://github.com/chaser79){:target="_blank"}
+- [FrontFlip Studios](http://www.frontflipstudios.com){:target="_blank"}
+- [Facebook](https://www.facebook.com/FrontFlipStudios/){:target="_blank"}
+- [Twitter](https://twitter.com/FrontFlipDevs){:target="_blank"}
 
 ## Donations
 If you would like to donate to make SwiftOnboardVC better or just buy me a beer.
@@ -167,12 +162,12 @@ If you would like to donate to make SwiftOnboardVC better or just buy me a beer.
 
 ## Communication
 
-- If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/ezswipecontroller). (Tag 'SwiftyOnboardVC')
-- Or email myself at <a href="mailto:info@frontflipstudios.com?Subject=SwiftyObboardVC" target="_top">info@frontflipstudios.com</a>.
+- If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/ezswipecontroller){:target="_blank"}. (Tag 'SwiftyOnboardVC')
+- Or email myself at info@frontflipstudios.com.
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
 - If you **want to contribute**, submit a pull request.
 
 ## License
 
-SwiftyOnboardVC is available under the MIT license. See the [LICENSE](https://github.com/chaser79/SwiftyOnboardVC/blob/master/LICENSE) file for more info.
+SwiftyOnboardVC is available under the MIT license. See the [LICENSE](https://github.com/chaser79/SwiftyOnboardVC/blob/master/LICENSE){:target="_blank"} file for more info.
