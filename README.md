@@ -1,12 +1,13 @@
 # SwiftyOnboardVC
-[![CI Status](http://img.shields.io/travis/chaser79/SwiftyOnboardVC.svg?style=flat)](https://travis-ci.org/chaser79/SwiftyOnboardVC){:target="_blank"}
-[![Version](https://img.shields.io/cocoapods/v/SwiftyOnboardVC.svg?style=flat)](http://cocoapods.org/pods/SwiftyOnboardVC){:target="_blank"}
-[![Platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](http://cocoapods.org/pods/SwiftyOnboardVC){:target="_blank"}
-[![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)](https://developer.apple.com/swift/resources/){:target="_blank"}
-[![License](https://img.shields.io/cocoapods/l/SwiftyOnboardVC.svg)](https://raw.githubusercontent.com/chaser79/SwiftyOnboardVC/master/LICENSE){:target="_blank"}
+[![CI Status](http://img.shields.io/travis/chaser79/SwiftyOnboardVC.svg?style=flat)](https://travis-ci.org/chaser79/SwiftyOnboardVC)
+[![Version](https://img.shields.io/cocoapods/v/SwiftyOnboardVC.svg?style=flat)](http://cocoapods.org/pods/SwiftyOnboardVC)
+[![Platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](http://cocoapods.org/pods/SwiftyOnboardVC)
+[![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)](https://developer.apple.com/swift/resources/)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N8JBV5QTY2BJL)
+[![License](https://img.shields.io/cocoapods/l/SwiftyOnboardVC.svg)](https://raw.githubusercontent.com/chaser79/SwiftyOnboardVC/master/LICENSE)
 
 Onboard controler written in swift 3 that uses view controlers.
-By [FrontFlip Studios](http://www.frontflipstudios.com){:target="_blank"}
+By [FrontFlip Studios](http://www.frontflipstudios.com)
 
 ## Overview
 <img src="Demo.gif" width="220"/>
@@ -14,7 +15,7 @@ By [FrontFlip Studios](http://www.frontflipstudios.com){:target="_blank"}
 ## Installation
 
 ### CocoaPods
-SwiftyOnboardVC is available through [CocoaPods](http://cocoapods.org){:target="_blank"}. To install it, simply add the following line to your Podfile:
+SwiftyOnboardVC is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 `pod 'SwiftyOnboardVC'`
 
@@ -146,23 +147,18 @@ func pageDidChange(currentPage: Int) {
 ```
 
 ## Author
-- [Luke Chase](https://github.com/chaser79){:target="_blank"}
-- [FrontFlip Studios](http://www.frontflipstudios.com){:target="_blank"}
-- [Facebook](https://www.facebook.com/FrontFlipStudios/){:target="_blank"}
-- [Twitter](https://twitter.com/FrontFlipDevs){:target="_blank"}
+- [Luke Chase](https://github.com/chaser79)
+- [FrontFlip Studios](http://www.frontflipstudios.com)
+- [Facebook](https://www.facebook.com/FrontFlipStudios/)
+- [Twitter](https://twitter.com/FrontFlipDevs)
 
 ## Donations
 If you would like to donate to make SwiftOnboardVC better or just buy me a beer.
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="8EFGJ5Q83LYBN">
-<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-</form>
+[![paypal](https://www.paypalobjects.com/en_GB/i/scr/pixel.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N8JBV5QTY2BJL)
 
 ## Communication
 
-- If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/ezswipecontroller){:target="_blank"}. (Tag 'SwiftyOnboardVC')
+- If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/ezswipecontroller). (Tag 'SwiftyOnboardVC')
 - Or email myself at info@frontflipstudios.com.
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
@@ -170,4 +166,4 @@ If you would like to donate to make SwiftOnboardVC better or just buy me a beer.
 
 ## License
 
-SwiftyOnboardVC is available under the MIT license. See the [LICENSE](https://github.com/chaser79/SwiftyOnboardVC/blob/master/LICENSE){:target="_blank"} file for more info.
+SwiftyOnboardVC is available under the MIT license. See the [LICENSE](https://github.com/chaser79/SwiftyOnboardVC/blob/master/LICENSE) file for more info.
