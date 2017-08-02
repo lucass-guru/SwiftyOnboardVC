@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SwiftyOnboardVC.svg?style=flat)](http://cocoapods.org/pods/SwiftyOnboardVC)
 [![Platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](http://cocoapods.org/pods/SwiftyOnboardVC)
 [![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)](https://developer.apple.com/swift/resources/)
+[![Twitter](https://img.shields.io/badge/twitter-@FrontFlipDevs-blue.svg?style=flat)](https://twitter.com/FrontFlipDevs)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N8JBV5QTY2BJL)
 [![License](https://img.shields.io/cocoapods/l/SwiftyOnboardVC.svg)](https://raw.githubusercontent.com/chaser79/SwiftyOnboardVC/master/LICENSE)
 
@@ -154,7 +155,7 @@ func pageDidChange(currentPage: Int) {
 
 ## Donations
 If you would like to donate to make SwiftOnboardVC better or just buy me a beer.
-[![paypal](https://www.paypalobjects.com/en_GB/i/scr/pixel.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N8JBV5QTY2BJL)
+[![paypal](https://www.paypalobjects.com/en_GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N8JBV5QTY2BJL)
 
 ## Communication
 
