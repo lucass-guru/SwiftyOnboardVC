@@ -1,15 +1,15 @@
 # SwiftyOnboardVC
 <p align="center">
-<img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat" target="_blank" alt="Platform iOS"/>
-<a href="https://developer.apple.com/swift/resources/" target="_blank"><img src="https://img.shields.io/badge/Swift-3.0.x-orange.svg" alt="Swift 3 compatible"></a>
-<a href="http://cocoapods.org/pods/SwiftyOnboardVC" target="_blank"><img src="https://img.shields.io/cocoapods/v/SwiftyOnboardVC.svg?style=flat" alt="CocoaPods compatible" /></a>
-<a href="https://raw.githubusercontent.com/chaser79/SwiftyOnboardVC/master/LICENSE" target="_blank"><img src="https://img.shields.io/cocoapods/l/SwiftyOnboardVC.svg" alt="License: MIT" /></a>
+<img src="https://img.shields.io/badge/platform-iOS-blue.svg?style=flat"alt="Platform iOS"/>
+<a href="https://developer.apple.com/swift/resources/"><img src="https://img.shields.io/badge/Swift-3.0.x-orange.svg" alt="Swift 3 compatible"></a>
+<a href="http://cocoapods.org/pods/SwiftyOnboardVC"><img src="https://img.shields.io/cocoapods/v/SwiftyOnboardVC.svg?style=flat" alt="CocoaPods compatible" /></a>
+<a href="https://raw.githubusercontent.com/chaser79/SwiftyOnboardVC/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/SwiftyOnboardVC.svg" alt="License: MIT" /></a>
 </p>
 
 <p>
 Onboard controler written in swift 3 that uses view controlers.
 <br>
-By <a href="http://www.frontflipstudios.com" target="_blank">FrontFlip Studios</a>
+By <a href="http://www.frontflipstudios.com">FrontFlip Studios.</a>
 </p>
 
 ## Overview
@@ -151,18 +151,13 @@ func pageDidChange(currentPage: Int) {
 ```
 
 ## Author
-<p>
-<a href="https://github.com/chaser79" target="_blank">Luke Chase</a>
-<a href="http://www.frontflipstudios.com" target="_blank">FrontFlip Studios</a>
-<a href="https://www.facebook.com/FrontFlipStudios/" target="_blank"><img src="http://i.imgur.com/fep1WsG.png" alt="facebook"></a>
-<a href="https://twitter.com/FrontFlipDevs" target="_blank"><img src="http://i.imgur.com/wWzX9uB.png" alt="twitter"></a>
-</p>
+- <a href="https://github.com/chaser79" target="_blank">Luke Chase</a>
+- <a href="http://www.frontflipstudios.com" target="_blank">FrontFlip Studios</a>
+- <a href="https://www.facebook.com/FrontFlipStudios/" target="_blank"><img src="http://i.imgur.com/fep1WsG.png" alt="facebook"></a>
+- <a href="https://twitter.com/FrontFlipDevs" target="_blank"><img src="http://i.imgur.com/wWzX9uB.png" alt="twitter"></a>
 
-##Donations
+## Donations
 If you would like to donate to make SwiftOnboardVC better or just buy me a beer.
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](chaser7979@gmail.com)
-<a href="https://www.paypal.com/cgi-bin/webscr" target="_blank"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal"></a>
-
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="8EFGJ5Q83LYBN">
@@ -173,7 +168,7 @@ If you would like to donate to make SwiftOnboardVC better or just buy me a beer.
 ## Communication
 
 - If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/ezswipecontroller). (Tag 'SwiftyOnboardVC')
-- Or <a href="mailto:info@frontflipstudios.com?Subject=SwiftyObboardVC" target="_top">email</a> myself. (info@frontflipstudios.com) 
+- Or email myself at <a href="mailto:info@frontflipstudios.com?Subject=SwiftyObboardVC" target="_top">info@frontflipstudios.com</a>.
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
 - If you **want to contribute**, submit a pull request.
