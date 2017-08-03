@@ -71,6 +71,14 @@ Present SwiftyOnboardVC
 ```swift
 self.present(onboard, animated: true, completion: nil)
 ```
+You can get a handle on SwiftyOnboardVC control in any of your view controler classes
+```swift
+//Get the parent view controler which is SwiftyOnboardVC
+if let parentVC = self.parent as? SwiftyOnboardVC {
+	//Then do whatever you like with the parent view controler
+	parentVC.dismiss(animated: true, completion: nil)
+}
+``` 
 
 ## Settings for SwiftyOnboardVC
 Once an instance has been created of SwiftyOnboardVC you can changed all of theses features
@@ -125,7 +133,7 @@ onboard.movePageControlOnScreen() //moves page control back on screen
 onboard.updateView() //updates the view to give an animation to the buttons when they are moved.
 ```
 
-##Delegate
+## Delegate
 Add `SwiftyOnboardVCDelegate` to the top of your swift file and set the delegate
 ``` swift
 onboard.delegate = self
