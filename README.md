@@ -1,4 +1,5 @@
 # SwiftyOnboardVC
+[![Build Status](https://api.travis-ci.org/chaser79/SwiftyOnboardVC.svg?branch=master)](https://travis-ci.org/chaser79/SwiftyOnboardVC/)
 [![Version](https://img.shields.io/cocoapods/v/SwiftyOnboardVC.svg?style=flat)](http://cocoapods.org/pods/SwiftyOnboardVC)
 [![Platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](http://cocoapods.org/pods/SwiftyOnboardVC)
 [![Swift 3.0.x](https://img.shields.io/badge/Swift-3.0.x-orange.svg)](https://developer.apple.com/swift/resources/)
