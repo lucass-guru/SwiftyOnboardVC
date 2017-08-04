@@ -1,3 +1,4 @@
 language: objective-c
-xcode_project: SwiftyOnboardVC.xcodeproj
-xcode_scheme: SwiftyOnboardVC
+osx_image: xcode8.3.3
+script:
+    xctool -project SwiftyOnboardVC.xcodeproj -scheme SwiftyOnboardVC build -sdk iphonesimulator
