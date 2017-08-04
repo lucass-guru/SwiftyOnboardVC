@@ -1,4 +1,4 @@
 language: objective-c
-osx_image: xcode8.3.3
+osx_image: xcode8.3
 script:
-    - xcodebuild clean build -sdk iphonesimulator -project SwiftyOnboardVC.xcodeproj -scheme SwiftyOnboardVC CODE_SIGNING_REQUIRED=YES
+  - xcodebuild clean build test -project SwiftyOnboardVC.xcodeproj -scheme SwiftyOnboardVC
