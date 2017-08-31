@@ -250,7 +250,6 @@
 				TargetAttributes = {
 					A30B3E9F1F2F554E002D5804 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = V3KV5ZCKK5;
 						ProvisioningStyle = Automatic;
 					};
 					A30B3EB31F2F554E002D5804 = {
@@ -475,7 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V3KV5ZCKK5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftyOnboardVC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -489,7 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V3KV5ZCKK5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftyOnboardVC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

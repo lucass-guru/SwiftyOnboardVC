@@ -21,7 +21,18 @@ class DemoTwoViewController: UIViewController, SwiftyOnboardVCDelegate {
             let viewThree = storyboard.instantiateViewController(withIdentifier: "ViewThree")
             let viewFour = storyboard.instantiateViewController(withIdentifier: "ViewFour")
             walkthough.viewControllers = [viewOne, viewTwo, viewThree, viewFour]
+            walkthough.pageControlBottomMargin = 75
             walkthough.delegate = self
+            
+            //right button
+            walkthough.bottomButtonText = "Use the app"
+            walkthough.bottomButtonBackgroundColor = .clear
+            walkthough.bottomButtonTextColor = .white
+            walkthough.bottomButtonBottomMargin = 32
+            walkthough.bottomButtonHeight = 26
+            walkthough.bottomButtonFont = UIFont.systemFont(ofSize: 22, weight: UIFontWeightSemibold)
+            walkthough.bottomButtonImage = UIImage(named: "skip_arrow")!
+            walkthough.bottomButtonImagePosition = .right
             
             walkthough.rightButtonText = "Skip"
             
@@ -52,6 +63,10 @@ class DemoTwoViewController: UIViewController, SwiftyOnboardVCDelegate {
         walkthough.skip()
     }
     
+    func bottomButtonPressed() {
+        dismiss(animated: true, completion: nil)
+    }
+    
     //MARK: Moving the buttons and page control on/off the screen
     func pageDidChange(currentPage: Int) {
         //Check the page number
@@ -60,11 +75,13 @@ class DemoTwoViewController: UIViewController, SwiftyOnboardVCDelegate {
             walkthough.moveLeftButtonOffScreen()
             walkthough.moveRightButtonOffScreen()
             walkthough.movePageControlOffScreen()
+            walkthough.moveBottomButtonOffScreen()
         } else {
             //We are on any other page, add the buttons
             walkthough.moveLeftButtonOnScreen()
             walkthough.moveRightButtonOnScreen()
             walkthough.movePageControlOnScreen()
+            walkthough.moveBottomButtonOnScreen()
         }
         
         //Don't forget to update the view to get the animation

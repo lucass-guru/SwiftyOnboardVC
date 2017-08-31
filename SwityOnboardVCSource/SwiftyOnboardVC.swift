@@ -27,6 +27,7 @@ import UIKit
 @objc public protocol SwiftyOnboardVCDelegate: class {
     @objc optional func leftButtonPressed()
     @objc optional func rightButtonPressed()
+    @objc optional func bottomButtonPressed()
     @objc optional func pageDidChange(currentPage: Int)
 }
 
@@ -52,6 +53,7 @@ import UIKit
     public var showPageControl = true
     public var pageControlTintColor: UIColor = .lightGray
     public var currentPageControlTintColor: UIColor = .black
+    public var pageControlBottomMargin: CGFloat = 0
     
     //Left button settings
     public var showLeftButton: Bool = true
@@ -71,6 +73,20 @@ import UIKit
     public var rightButtonHeightPadding: CGFloat = 5
     public var rightButtonWidthPadding: CGFloat = 5
     
+    //Bottom button settings
+    public var showBottomButton: Bool = true
+    public var bottomButtonText: String = "Skip"
+    public var bottomButtonTextColor: UIColor = .black
+    public var bottomButtonBackgroundColor: UIColor = .clear
+    public var bottomButtonCornerRadius: CGFloat = 0
+    public var bottomButtonHeightPadding: CGFloat = 0
+    public var bottomButtonWidthPadding: CGFloat = 0
+    public var bottomButtonBottomMargin: CGFloat = 32
+    public var bottomButtonHeight: CGFloat = 20
+    public var bottomButtonFont: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)
+    public var bottomButtonImage: UIImage = UIImage()
+    public var bottomButtonImagePosition: ButtonImagePosition = .left
+    
     //Button top margin
     public var buttonTopMargin: CGFloat = 5
     
@@ -82,6 +98,7 @@ import UIKit
     private var buttonTopConstant: CGFloat = 5
     private var leftButtonTopConstriant: NSLayoutConstraint?
     private var rightButtonTopConstriant: NSLayoutConstraint?
+    private var bottomButtonBottomConstriant: NSLayoutConstraint?
     private var pageControlBottomConstriant: NSLayoutConstraint?
     private let pageControl: UIPageControl = {
         let p = UIPageControl()
@@ -97,6 +114,12 @@ import UIKit
     private lazy var rightButton: UIButton = {
         let button = UIButton(type: .system)
         button.addTarget(self, action: #selector(rightButtonPressed), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    private lazy var bottomButton: UIButton = {
+        let button = UIButton(type: .custom)
+        button.addTarget(self, action: #selector(bottomButtonPressed), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -158,6 +181,7 @@ import UIKit
         pageControl.removeFromSuperview()
         leftButton.removeFromSuperview()
         rightButton.removeFromSuperview()
+        bottomButton.removeFromSuperview()
     
         //Check if we have a navigation bar and status bar
         if let navBar = self.navigationController?.navigationBar {
@@ -197,7 +221,7 @@ import UIKit
         if showPageControl {
             //Add the page control and constriants
             self.view.addSubview(pageControl)
-            pageControlBottomConstriant = pageControl.anchor(nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 40)[1]
+            pageControlBottomConstriant = pageControl.anchor(nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: pageControlBottomMargin, rightConstant: 0, widthConstant: 0, heightConstant: 40)[1]
         }
         
         //Set the left button settings
@@ -224,6 +248,28 @@ import UIKit
             //Add the right button and constriants
             self.view.addSubview(rightButton)
             rightButtonTopConstriant = rightButton.anchor(view.topAnchor, left: nil, bottom: nil, right: view.rightAnchor, topConstant: buttonTopConstant, leftConstant: 0, bottomConstant: 0, rightConstant: 5, widthConstant: rightButton.frame.width, heightConstant: rightButton.frame.height).first
+        }
+        
+        //Set the bottom button settings
+        bottomButton.setTitle(bottomButtonText, for: .normal)
+        bottomButton.setTitleColor(bottomButtonTextColor, for: .normal)
+        bottomButton.titleLabel?.font = bottomButtonFont
+        bottomButton.layer.backgroundColor = bottomButtonBackgroundColor.cgColor
+        bottomButton.layer.cornerRadius = bottomButtonCornerRadius
+        bottomButton.contentEdgeInsets = UIEdgeInsetsMake(bottomButtonHeightPadding, bottomButtonWidthPadding, bottomButtonHeightPadding, bottomButtonWidthPadding)
+        bottomButton.setImage(bottomButtonImage, for: .normal)
+        if bottomButtonImagePosition == .right {
+            //This is a hack to put the button image on the right
+            bottomButton.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+            bottomButton.titleLabel?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+            bottomButton.imageView?.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+        }
+        
+        //Check to see if we should show the bottom button
+        if showBottomButton {
+            //Add the bottom button and constriants
+            self.view.addSubview(bottomButton)
+            bottomButtonBottomConstriant = bottomButton.anchor(nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: bottomButtonBottomMargin, rightConstant: 0, widthConstant: 0, heightConstant: bottomButtonHeight)[1]
         }
         
         //Check if we have view controllers
@@ -298,6 +344,10 @@ import UIKit
         delegate?.rightButtonPressed?()
     }
     
+    @objc private func bottomButtonPressed() {
+        delegate?.bottomButtonPressed?()
+    }
+    
     public func nextPage() {
         //Check if we are on the last page
         if pageControl.currentPage == viewControllers.count - 1 {
@@ -360,6 +410,22 @@ import UIKit
         }
     }
     
+    public func moveBottomButtonOffScreen() {
+        if showBottomButton {
+            bottomButtonBottomConstriant?.constant = 40
+        } else {
+            print("Tried moving the bottom button off screen but the bottom button is set to hidden.")
+        }
+    }
+    
+    public func moveBottomButtonOnScreen() {
+        if showBottomButton {
+            bottomButtonBottomConstriant?.constant = -bottomButtonBottomMargin
+        } else {
+            print("Tried moving the bottom button onto screen but the bottom button is hidden")
+        }
+    }
+    
     public func movePageControlOffScreen() {
         if showPageControl {
             pageControlBottomConstriant?.constant = 40
@@ -370,7 +436,7 @@ import UIKit
     
     public func movePageControlOnScreen() {
         if showPageControl {
-            pageControlBottomConstriant?.constant = 0
+            pageControlBottomConstriant?.constant = -pageControlBottomMargin
         } else {
             print("Tried moving the page control onto screen but the page control is set to hidden.")
         }
@@ -428,3 +494,11 @@ private extension UIView {
     }
 }
 
+public enum ButtonImagePosition {
+    // The left position is a default
+    case left
+    // The right position is useful to display arrows
+    case right
+    // In case you don't have a title on the button, so above variants make no sense
+    case buttonHasNoTitle
+}
