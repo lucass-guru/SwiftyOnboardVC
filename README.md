@@ -168,7 +168,7 @@ If you would like to donate to make SwiftOnboardVC better or just buy me a beer.
 
 ## Communication
 
-- If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/ezswipecontroller). (Tag 'SwiftyOnboardVC')
+- If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/SwiftyOnboardVC). (Tag 'SwiftyOnboardVC')
 - Or email myself at info@frontflipstudios.com.
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
