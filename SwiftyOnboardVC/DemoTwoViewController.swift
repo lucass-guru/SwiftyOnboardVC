@@ -30,7 +30,7 @@ class DemoTwoViewController: UIViewController, SwiftyOnboardVCDelegate {
             walkthough.bottomButtonTextColor = .white
             walkthough.bottomButtonBottomMargin = 32
             walkthough.bottomButtonHeight = 26
-            walkthough.bottomButtonFont = UIFont.systemFont(ofSize: 22, weight: UIFontWeightSemibold)
+            walkthough.bottomButtonFont = UIFont.systemFont(ofSize: 22, weight: UIFont.Weight.semibold)
             walkthough.bottomButtonImage = UIImage(named: "skip_arrow")!
             walkthough.bottomButtonImagePosition = .right
             
